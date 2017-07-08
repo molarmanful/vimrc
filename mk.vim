@@ -12,7 +12,6 @@ nnoremap <S-Right> 10l
 
 nnoremap - o<esc>k
 nnoremap _ O<esc>j
-nnoremap WW :q!<cr>
 inoremap jk <esc>
 inoremap kj <esc>
 vnoremap jk <esc>
