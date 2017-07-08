@@ -4,6 +4,7 @@ au BufNewFile,BufRead *.md setlocal wrap
 au BufNewFile,BufRead *.txt setlocal wrap
 au BufNewFile,BufRead *.pug setf pug
 au BufNewFile,BufRead *.styl setf stylus
+au BufNewFile,BufRead .vimexec setf vim
 au BufWritePost *.pegjs silent !pegjs -o %:r-peg.js % >/dev/null &
 au BufWritePost *.pug silent !pug % >/dev/null &
 au BufWritePost *.styl silent !stylus -u autoprefixer-stylus -c % >/dev/null &
