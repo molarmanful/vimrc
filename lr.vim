@@ -1,6 +1,6 @@
-source lp.vim
-source lk.vim
-source ls.vim
+source ~/vimrc/lp.vim
+source ~/vimrc/lk.vim
+source ~/vimrc/ls.vim
 colo boldy
 if filereadable(".vimexec")
   source .vimexec
