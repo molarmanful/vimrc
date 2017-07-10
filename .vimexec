@@ -1,4 +1,4 @@
+au BufNewFile,BufRead r e lr.vim | vsp mr.vim
 au BufNewFile,BufRead p e p.vim | tabe lp.vim | vsp mp.vim
-au BufNewFile,BufRead r e r.vim | tabe lr.vim | vsp mr.vim
 au BufNewFile,BufRead k e k.vim | tabe lk.vim | vsp mk.vim
 au BufNewFile,BufRead s e s.vim | tabe ls.vim | vsp ms.vim
