@@ -9,6 +9,8 @@ inoremap <C-a> <Home>
 inoremap <C-e> <End>
 inoremap <M-f> <C-o>W
 inoremap <M-b> <C-o>B
+inoremap <C-d> <C-o>x
+inoremap <M-d> <C-o>daw
 inoremap <C-k> <C-o>D
 inoremap <C-y> <C-o>p
 inoremap <C-x><C-s> <Esc>:w<CR>a
