@@ -7,8 +7,8 @@ inoremap <C-p> <Up>
 inoremap <C-n> <Down>
 inoremap <C-a> <Home>
 inoremap <C-e> <End>
-inoremap <Esc>f <Esc>lWi
-inoremap <Esc>b <Esc>lBi
+inoremap <M-f> <Esc>lWi
+inoremap <M-b> <Esc>Ba
 inoremap <C-k> <Esc>lDa
 inoremap <C-u> <Esc>d0xi
 inoremap <C-y> <Esc>Pa
