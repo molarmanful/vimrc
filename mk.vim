@@ -11,7 +11,7 @@ inoremap <Esc>f <Esc>lWi
 inoremap <Esc>b <Esc>Bi
 inoremap <C-k> <Esc>lDa
 inoremap <C-u> <Esc>d0xi
-inoremap <C-y> <Esc>Pa
+inoremap <C-y> <Esc>pa
 inoremap <C-x><C-s> <Esc>:w<CR>a
 
 nnoremap <Up> 5k
