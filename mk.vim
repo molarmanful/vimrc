@@ -1,6 +1,19 @@
 nnoremap <SPACE> <Nop>
 let mapleader=' '
 
+inoremap <C-f> <Right>
+inoremap <C-b> <Left>
+inoremap <C-p> <Up>
+inoremap <C-n> <Down>
+inoremap <C-a> <Home>
+inoremap <C-e> <End>
+inoremap <Esc>f <Esc>lWi
+inoremap <Esc>b <Esc>lBi
+inoremap <C-k> <Esc>lDa
+inoremap <C-u> <Esc>d0xi
+inoremap <C-y> <Esc>Pa
+inoremap <C-x><C-s> <Esc>:w<CR>a
+
 nnoremap <Up> 5k
 nnoremap <Down> 5j
 nnoremap <Left> 5h
