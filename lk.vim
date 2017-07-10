@@ -7,11 +7,10 @@ inoremap <C-p> <Up>
 inoremap <C-n> <Down>
 inoremap <C-a> <Home>
 inoremap <C-e> <End>
-inoremap <M-f> <Esc>lWi
-inoremap <M-b> <Esc>Bi
-inoremap <C-k> <Esc>lDa
-inoremap <C-u> <Esc>d0xi
-inoremap <C-y> <Esc>pa
+inoremap <M-f> <C-o>W
+inoremap <M-b> <C-o>B
+inoremap <C-k> <C-o>D
+inoremap <C-y> <C-o>p
 inoremap <C-x><C-s> <Esc>:w<CR>a
 
 nnoremap <Up> 5k
@@ -27,8 +26,6 @@ nnoremap - o<esc>k
 nnoremap _ O<esc>j
 inoremap jk <esc>
 inoremap kj <esc>
-vnoremap jk <esc>
-vnoremap kj <esc>
 
 nnoremap <leader>ev :tabe $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
