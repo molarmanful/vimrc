@@ -1,4 +1,7 @@
-au BufNewFile,BufRead r e lr.vim | vsp mr.vim
-au BufNewFile,BufRead p e p.vim | tabe lp.vim | vsp mp.vim
-au BufNewFile,BufRead k e k.vim | tabe lk.vim | vsp mk.vim
-au BufNewFile,BufRead s e s.vim | tabe ls.vim | vsp ms.vim
+au BufNewFile,BufRead zr e r.zsh | tabe lr.zsh | vsp mr.zsh
+au BufNewFile,BufRead ze e e.zsh | tabe le.zsh | vsp me.zsh
+
+au BufNewFile,BufRead vr e lr.vim | vsp mr.vim
+au BufNewFile,BufRead vp e p.vim | tabe lp.vim | vsp mp.vim
+au BufNewFile,BufRead vk e k.vim | tabe lk.vim | vsp mk.vim
+au BufNewFile,BufRead vs e s.vim | tabe ls.vim | vsp ms.vim
