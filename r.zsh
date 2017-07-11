@@ -10,12 +10,6 @@ export ZSH=$HOME/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 source ~/zsh-git-prompt/zshrc.sh
 
-gpa(){
-  git add .
-  git commit -m $1
-  git push
-}
-
 autoload -Uz compinit zcalc
 if [[ -n ~/.zcompdump(#qN.mh+24) ]]; then
   compinit
@@ -36,6 +30,7 @@ bindkey '^?' backward-delete-char
 bindkey '^H' backward-delete-char
 bindkey '^[[A' up-line-or-search
 bindkey '^[[B' down-line-or-search
+
 zle -N zle-line-init
 zle -N zle-keymap-select
 zle -N zle-line-finish
@@ -46,8 +41,8 @@ ZSH_THEME_GIT_PROMPT_PREFIX=" @ "
 ZSH_THEME_GIT_PROMPT_SUFFIX=""
 ZSH_THEME_GIT_PROMPT_SEPARATOR=" "
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=241"
-export PS1=$'%{$(tput cup $(tput cols))%(?.$fg[cyan].$fg[red])%}$>%{$reset_color%} '
-export PS2=$'%{%(?.$fg[cyan].$fg[red])%}│%{$reset_color%}  '
 
-clear
+export PS1=$'%{$(tput cup $(tput cols))%(?.%F{cyan}.%F{red})%}$>%{\e[0m%} '
+export PS2=$'   '
+
 tput cvvis
