@@ -29,8 +29,6 @@ nnoremap _ O<esc>j
 inoremap jk <esc>
 inoremap kj <esc>
 
-nnoremap <leader>ev :tabe $MYVIMRC<cr>
-nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <leader>g :Goyo<cr>
 nnoremap <leader>n :NERDTreeToggle<cr>
 
