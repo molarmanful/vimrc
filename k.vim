@@ -13,7 +13,8 @@ inoremap <C-d> <C-o>x
 inoremap <M-d> <C-o>daw
 inoremap <C-k> <C-o>D
 inoremap <C-y> <C-o>p
-inoremap <C-x><C-s> <Esc>:w<CR>a
+inoremap <C-x><C-s> <Esc>:w<cr>a
+inoremap <C-x><C-c> <Esc>:q!<cr>
 
 nnoremap <Up> 5k
 nnoremap <Down> 5j
@@ -35,7 +36,7 @@ nnoremap <leader>g :Goyo<cr>
 nnoremap <leader>n :NERDTreeToggle<cr>
 
 nnoremap  :let @/=""<cr>
-nnoremap <BS> :let @/=""<cr>
+nnoremap <bs> :let @/=""<cr>
 cnoremap mk. !mkdir -p <c-r>=expand("%:h")<cr>/
 
 vnoremap > >gv
