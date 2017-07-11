@@ -1,5 +1,11 @@
 [[ $TMUX = '' ]] && tmux new -A -s x
 
+(
+  cd ~/vimrc
+  git fetch
+  [[ $(git rev-parse HEAD) == $(git rev-parse @{u}) ]] || git pull
+) &!
+
 DISABLE_UPDATE_PROMPT=true
 HYPHEN_INSENSITIVE="true"
 
