@@ -9,6 +9,9 @@ alias dmenu_run='dmenu_run -i -h 1800 -w 2880 -p "          cmd " -fn "mononoki-
 alias dmenu_colo='colo $(ls -1 ~/.colors | dmenu -i -h 1800 -w 2880 -p "         colo " -fn "mononoki-15" -o .8 -nb "$(~/xparse background)" -nf "$(~/xparse color1)" -sb "$(~/xparse background)" -sf "$(~/xparse foreground)" -q) > /dev/null &!'
 alias emacs='emacs -nw'
 alias fortran='fortran -ffree-form'
+alias sxiv='sxiv -a'
+alias rtv='rtv --enable-media'
+alias tty-clock='tty-clock -s -c'
 
 j4dmenu_run(){
   j4-dmenu-desktop --dmenu='dmenu -i -h 1800 -w 2880 -p "          app " -fn "mononoki-15" -o .8 -nb "$(~/xparse background)" -nf "$(~/xparse color1)" -sb "$(~/xparse background)" -sf "$(~/xparse foreground)" -q'
