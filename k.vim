@@ -1,4 +1,4 @@
-nnoremap <SPACE> <Nop>
+nnoremap <SPACE> <nop>
 let mapleader=' '
 
 inoremap <C-f> <Right>
