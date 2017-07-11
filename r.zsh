@@ -5,7 +5,7 @@ HYPHEN_INSENSITIVE="true"
 
 export KEYTIMEOUT=10
 export EDITOR=vim
-plugins=(git npm zsh-syntax-highlighting zsh-autosuggestions z history colored-man-pages extract)
+plugins=(git npm zsh-syntax-highlighting zsh-autosuggestions z history colored-man-pages archlinux extract)
 export ZSH=$HOME/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 source ~/zsh-git-prompt/zshrc.sh
