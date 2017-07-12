@@ -20,3 +20,4 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 )
 
 vim +PlugInstall +qa
+npm i -g pug-cli stylus autoprefixer-stylus electron ngrok nodemon
