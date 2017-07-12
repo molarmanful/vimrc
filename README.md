@@ -12,3 +12,10 @@ Files with `l` or `m` prefixes are exclusively sourced by my Linux and Mac build
 The `p` files hold vim-plug entries.
 The `k` files hold keybindings.
 The `s` files hold general settings.
+
+## Installation
+There is a crude script (`install.zsh`) that will install a working subset of the configs. It assumes that you have zsh and vim installed already.
+```
+git clone https://github.com/molarmanful/vimrc
+vimrc/install.zsh # if you're on mac, do `vimrc/install.zsh m` instead
+```
