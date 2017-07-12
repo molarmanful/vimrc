@@ -15,4 +15,5 @@ Plug 'wavded/vim-stylus'
 Plug 'noahfrederick/vim-noctu'
 Plug 'chrisbra/SudoEdit.vim'
 Plug 'tmux-plugins/vim-tmux'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 call plug#end()
