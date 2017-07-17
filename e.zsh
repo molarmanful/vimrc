@@ -1,4 +1,5 @@
 alias tmux='tmux -2'
+alias ls='ls -Ga'
 
 gpa(){
   git add .

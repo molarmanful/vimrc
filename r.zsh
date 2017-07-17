@@ -16,6 +16,8 @@ export ZSH=$HOME/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 source ~/zsh-git-prompt/zshrc.sh
 
+alias ls='ls -Ga'
+
 autoload -Uz compinit zcalc
 if [[ -n ~/.zcompdump(#qN.mh+24) ]]; then
   compinit
