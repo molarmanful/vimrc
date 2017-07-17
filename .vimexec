@@ -5,3 +5,6 @@ au BufNewFile,BufRead vr e lr.vim | vsp mr.vim
 au BufNewFile,BufRead vp e p.vim | tabe lp.vim | vsp mp.vim
 au BufNewFile,BufRead vk e k.vim | tabe lk.vim | vsp mk.vim
 au BufNewFile,BufRead vs e s.vim | tabe ls.vim | vsp ms.vim
+
+au BufEnter *.vim setf vim
+au BufEnter *.zsh setf zsh
