@@ -10,13 +10,14 @@ au BufWritePost *.pug silent !pug % >/dev/null &
 au BufWritePost *.styl silent !stylus -u autoprefixer-stylus -c % >/dev/null &
 au BufWritePost *.f silent !gfortran % -o %:r -ffree-form >/dev/null &
 au BufWritePost *.ne silent !nearleyc -o %:r-ne.js % >/dev/null &
-au InsertEnter * :set nu
+au InsertEnter * :set nornu
 au InsertLeave * :set rnu
 au User GoyoEnter NERDTreeClose
 
 set t_Co=16
 set shell=/bin/zsh
 set showcmd
+set nu
 set rnu
 set nowrap
 set wildmode=longest:full,list:full
