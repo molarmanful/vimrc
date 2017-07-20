@@ -16,3 +16,4 @@ Plug 'noahfrederick/vim-noctu'
 Plug 'chrisbra/SudoEdit.vim'
 Plug 'tmux-plugins/vim-tmux'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+Plug 'lervag/vimtex'
