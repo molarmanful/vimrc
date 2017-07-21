@@ -1,7 +1,7 @@
 command Wsu SudoWrite
 
 au BufNewFile,BufRead *.tex setf tex
-au BufNewFile,BufRead *.md,*.txt setlocal formatoptions=an|setlocal wrap|setlocal spell spelllang=en_us
+au BufNewFile,BufRead *.md,*.txt setlocal wrap|setlocal spell spelllang=en_us
 au BufNewFile,BufRead *.pug setf pug
 au BufNewFile,BufRead *.styl setf stylus
 au BufNewFile,BufRead .vimexec setf vim
