@@ -29,6 +29,7 @@ set statusline=%t%h%m%r%y%=%c,%l/%L\
 set laststatus=2
 set splitright
 set splitbelow
+set ttimeoutlen=100
 let NERDTreeShowHidden=1
 let g:indentLine_char='│'
 let g:indentLine_leadingSpaceChar='·'
