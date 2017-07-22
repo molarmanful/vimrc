@@ -8,3 +8,4 @@ au BufNewFile,BufRead vs e s.vim | tabe ls.vim | vsp ms.vim
 
 au BufEnter *.vim setf vim
 au BufEnter *.zsh setf zsh
+au BufEnter *.tmux setf tmux
