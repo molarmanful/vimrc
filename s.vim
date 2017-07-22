@@ -1,7 +1,7 @@
 command Wsu SudoWrite
 
 au BufNewFile,BufRead *.tex setf tex
-au BufNewFile,BufRead *.md,*.txt setl fo=1|setl wrap|setl linebreak|nnoremap j gj|nnoremap k gk
+au BufNewFile,BufRead *.md,*.txt setl fo=1|setl wrap|setl linebreak
 au BufNewFile,BufRead *.pug setf pug
 au BufNewFile,BufRead *.styl setf stylus
 au BufNewFile,BufRead .vimexec setf vim
@@ -10,14 +10,10 @@ au BufWritePost *.pug silent !pug % >/dev/null &
 au BufWritePost *.styl silent !stylus -u autoprefixer-stylus -c % >/dev/null &
 au BufWritePost *.f silent !gfortran % -o %:r -ffree-form >/dev/null &
 au BufWritePost *.ne silent !nearleyc -o %:r-ne.js % >/dev/null &
-au InsertEnter * setl nornu|setl nu
-au InsertLeave * setl nonu|setl rnu
-au User GoyoEnter setl rnu
 
 set t_Co=16
 set shell=/bin/zsh
 set showcmd
-set rnu
 set nowrap
 set wildmode=longest:full,list:full
 set hlsearch
