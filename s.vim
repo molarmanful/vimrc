@@ -12,7 +12,7 @@ au BufWritePost *.f silent !gfortran % -o %:r -ffree-form >/dev/null &
 au BufWritePost *.ne silent !nearleyc -o %:r-ne.js % >/dev/null &
 au InsertEnter * setl nornu|setl nu
 au InsertLeave * setl nonu|setl rnu
-au User GoyoEnter NERDTreeClose|setl rnu
+au User GoyoEnter setl rnu
 
 set t_Co=16
 set shell=/bin/zsh

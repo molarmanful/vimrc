@@ -1,7 +1,7 @@
 call plug#begin()
 Plug 'flazz/vim-colorschemes'
 Plug 'tpope/vim-sensible'
-Plug 'junegunn/goyo.vim'
+Plug 'junegunn/goyo.vim', {'on': 'Goyo'}
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
