@@ -1,7 +1,7 @@
 command Wsu SudoWrite
 
 au BufNewFile,BufRead *.tex setf tex
-au BufNewFile,BufRead *.md,*.txt setlocal wrap|setlocal spell spelllang=en_us
+au BufNewFile,BufRead *.md,*.txt setl fo=1|setl wrap|setl linebreak|nnoremap j gj|nnoremap k gk
 au BufNewFile,BufRead *.pug setf pug
 au BufNewFile,BufRead *.styl setf stylus
 au BufNewFile,BufRead .vimexec setf vim
@@ -10,9 +10,9 @@ au BufWritePost *.pug silent !pug % >/dev/null &
 au BufWritePost *.styl silent !stylus -u autoprefixer-stylus -c % >/dev/null &
 au BufWritePost *.f silent !gfortran % -o %:r -ffree-form >/dev/null &
 au BufWritePost *.ne silent !nearleyc -o %:r-ne.js % >/dev/null &
-au InsertEnter * setlocal nornu
-au InsertLeave * setlocal rnu
-au User GoyoEnter NERDTreeClose|setlocal nu|setlocal rnu
+au InsertEnter * setl nornu
+au InsertLeave * setl rnu
+au User GoyoEnter NERDTreeClose|setl nu|setl rnu
 
 set t_Co=16
 set shell=/bin/zsh
@@ -35,3 +35,6 @@ set laststatus=2
 set splitright
 set splitbelow
 let NERDTreeShowHidden=1
+let g:indentLine_char='│'
+let g:indentLine_leadingSpaceChar='·'
+let g:indentLine_leadingSpaceEnabled=1

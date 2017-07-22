@@ -32,6 +32,7 @@ inoremap kj <esc>
 
 nnoremap <leader>g :Goyo<cr>
 nnoremap <leader>n :NERDTreeToggle<cr>
+nnoremap <leader>s :setl spell! spelllang=en_us<cr>
 
 nnoremap  :let @/=""<cr>
 nnoremap <bs> :let @/=""<cr>
