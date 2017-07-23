@@ -29,4 +29,14 @@ set statusline=\ %t\ %h%m%r%y%=%c,%l/%L\
 set splitright
 set splitbelow
 set ttimeoutlen=100
+set hidden
+set history=1000
+set undolevels=1000
+set wildignore=*.swp,*.bak,*.pyc,*.class
+set title
+set visualbell
+set noerrorbells
+set nobackup
+set noswapfile
+
 let NERDTreeShowHidden=1
