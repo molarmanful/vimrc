@@ -24,21 +24,9 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 set cul
-set fillchars=vert:\ 
-set statusline=%t%h%m%r%y%=%c,%l/%L\ 
-set laststatus=0
+set fillchars=vert:║
+set statusline=\ %t\ %h%m%r%y%=%c,%l/%L\ 
 set splitright
 set splitbelow
 set ttimeoutlen=100
 let NERDTreeShowHidden=1
-
-let g:submode_timeout = 0
-let g:submode_keep_leaving_key = 1
-
-" call submode#enter_with('DISPLAY','n','','<C-g>','')
-" call submode#leave_with('DISPLAY','n','','<C-g>')
-" call submode#map('DISPLAY','n','','j','gj')
-" call submode#map('DISPLAY','n','','k','gk')
-" call submode#map('DISPLAY','n','','0','g0')
-" call submode#map('DISPLAY','n','','^','g^')
-" call submode#map('DISPLAY','n','','$','g$')
