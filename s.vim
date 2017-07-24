@@ -24,6 +24,7 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 set cul
+set rnu
 set fillchars=vert:║
 set statusline=\ %t\ %h%m%r%y%=%c,%l/%L\ 
 set splitright
