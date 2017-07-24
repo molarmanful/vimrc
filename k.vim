@@ -33,8 +33,8 @@ inoremap kj <esc>
 nnoremap <leader>g :Goyo<cr>
 nnoremap <leader>n :NERDTreeToggle<cr>
 nnoremap <leader>s :setl spell! spelllang=en_us<cr>
-nnoremap <leader>l :setl rnu!<cr>
-nnoremap <leader>L :setl nu!<cr>
+nnoremap <leader>l :setl nonu\|setl rnu!<cr>
+nnoremap <leader>L :setl nornu\|setl nu!<cr>
 
 nnoremap ; :
 nnoremap : ;
