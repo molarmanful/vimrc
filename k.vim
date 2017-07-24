@@ -10,11 +10,11 @@ inoremap <C-e> <End>
 inoremap <M-f> <C-o>W
 inoremap <M-b> <C-o>B
 inoremap <C-d> <C-o>x
-inoremap <M-d> <C-o>daw
+inoremap <M-d> <C-o>daW
 inoremap <C-k> <C-o>D
 inoremap <C-y> <C-o>p
-inoremap <C-x><C-s> <Esc>:w<cr>a
-inoremap <C-x><C-c> <Esc>:q!<cr>
+inoremap <C-x><C-s> <C-o>:w<cr>
+inoremap <C-x><C-c> <C-o>:q!<cr>
 
 nnoremap <Up> 5k
 nnoremap <Down> 5j
@@ -36,6 +36,8 @@ nnoremap <leader>s :setl spell! spelllang=en_us<cr>
 nnoremap <leader>l :setl rnu!<cr>
 nnoremap <leader>L :setl nu!<cr>
 
+nnoremap ; :
+nnoremap : ;
 nnoremap  :let @/=""<cr>
 nnoremap <bs> :let @/=""<cr>
 cnoremap mk. !mkdir -p <c-r>=expand("%:h")<cr>/
