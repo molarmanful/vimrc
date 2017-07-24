@@ -1,5 +1,3 @@
-[[ $TMUX = '' ]] && tmux new -A -s x
-
 (
   cd ~/vimrc
   git fetch
