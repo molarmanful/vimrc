@@ -9,3 +9,6 @@ gpa(){
   git commit -m "$1"
   git push
 }
+exit(){
+  [[ -z $TMUX ]] && builtin exit || tmux detach
+}
