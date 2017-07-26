@@ -42,7 +42,7 @@ ZSH_THEME_GIT_PROMPT_SUFFIX=""
 ZSH_THEME_GIT_PROMPT_SEPARATOR=" "
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=241"
 
-export PS1=$'%{$(tput cup $(tput cols))%(?.%F{cyan}.%F{red})%}$>%{\e[0m%} '
+export PS1=$'%{$(tput cup $(tput cols))%(?.%F{cyan}.%F{red})%}.>%{\e[0m%} '
 export PS2=$'   '
 
 tput cvvis
