@@ -1,21 +1,6 @@
 nnoremap <SPACE> <nop>
 let mapleader=' '
 
-inoremap <C-f> <Right>
-inoremap <C-b> <Left>
-inoremap <C-p> <Up>
-inoremap <C-n> <Down>
-inoremap <C-a> <Home>
-inoremap <C-e> <End>
-inoremap <M-f> <C-o>W
-inoremap <M-b> <C-o>B
-inoremap <C-d> <C-o>x
-inoremap <M-d> <C-o>daW
-inoremap <C-k> <C-o>D
-inoremap <C-y> <C-o>p
-inoremap <C-x><C-s> <C-o>:w<cr>
-inoremap <C-x><C-c> <C-o>:q!<cr>
-
 nnoremap <Up> 5k
 nnoremap <Down> 5j
 nnoremap <Left> 5h
@@ -36,8 +21,6 @@ nnoremap <leader>s :setl spell! spelllang=en_us<cr>
 nnoremap <leader>l :setl nonu\|setl rnu!<cr>
 nnoremap <leader>L :setl nornu\|setl nu!<cr>
 
-nnoremap ; :
-nnoremap : ;
 nnoremap  :let @/=""<cr>
 nnoremap <bs> :let @/=""<cr>
 cnoremap mk. !mkdir -p <c-r>=expand("%:h")<cr>/
