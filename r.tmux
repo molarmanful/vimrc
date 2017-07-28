@@ -11,7 +11,6 @@ set -g status off
 set -g history-limit 99999
 set -g prefix C-a
 set -g mouse on
-set -g remain-on-exit on
 set -sg escape-time 0
 set -g @scroll-down-exit-copy-mode 'on'
 set -g @scroll-without-changing-pane 'on'
@@ -22,5 +21,3 @@ set -g mouse on
 bind-key C-a send-prefix
 bind r source-file ~/.tmux.conf
 bind C-x confirm-before -p "respawn-pane #P? (y/n)" "respawn-pane -k"
-
-run '~/.tmux/plugins/tpm/tpm'

@@ -9,3 +9,6 @@ if exists('$TMUX')
   let &t_SR = "\ePtmux;\e" . &t_SR . "\e\\"
   let &t_EI = "\ePtmux;\e" . &t_EI . "\e\\"
 endif
+
+let &t_ti.="\<Esc>]1337;HighlightCursorLine=true\x7"
+let &t_te.="\<Esc>]1337;HighlightCursorLine=false\x7"

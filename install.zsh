@@ -10,7 +10,7 @@ git clone git://github.com/zdharma/fast-syntax-highlighting ~/.oh-my-zsh/custom/
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-echo "source-file ~/vimrc/r.tmux" > ~/.tmux.conf
+echo "source-file ~/vimrc/r.tmux;run '~/.tmux/plugins/tpm/tpm'" > ~/.tmux.conf
 
 [[ $1 == 'm' ]] && (
   echo "source ~/vimrc/mr.vim" > ~/.vimrc
