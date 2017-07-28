@@ -1,3 +1,9 @@
+tmux info &>/dev/null && (
+  tmux start
+  tmux new -d -s cmus cmus
+) &>/dev/null
+clear
+
 DISABLE_UPDATE_PROMPT=true
 HYPHEN_INSENSITIVE="true"
 
@@ -42,7 +48,8 @@ ZSH_THEME_GIT_PROMPT_SUFFIX=""
 ZSH_THEME_GIT_PROMPT_SEPARATOR=" "
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=241"
 
-export PS1=$'%{$(tput cup $(tput cols))%(?.%F{cyan}.%F{red})%}.>%{\e[0m%} '
+export PS1=$'%{$(tput cup $(tput cols))%B%(?.%F{cyan}.%F{red})%}.>%{\e[0m%} '
 export PS2=$'   '
 
+clear
 tput cvvis
