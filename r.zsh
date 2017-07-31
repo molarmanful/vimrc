@@ -2,7 +2,6 @@ tmux info &>/dev/null && (
   tmux start
   tmux new -d -s cmus cmus
 ) &>/dev/null
-clear
 
 DISABLE_UPDATE_PROMPT=true
 HYPHEN_INSENSITIVE="true"
