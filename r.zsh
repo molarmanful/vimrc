@@ -1,6 +1,6 @@
 tmux info &>/dev/null && (
   tmux start
-  tmux new -d -s cmus cmus
+  tmux new -d -s ncmpcpp ncmpcpp
 ) &>/dev/null
 
 DISABLE_UPDATE_PROMPT=true
