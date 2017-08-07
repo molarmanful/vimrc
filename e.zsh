@@ -1,5 +1,5 @@
 alias tmux='tmux -2'
-alias ls='ls -Ga'
+alias ls='ls -a --color'
 
 gca(){
   git clone "https://github.com/$1"
