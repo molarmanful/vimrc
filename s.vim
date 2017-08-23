@@ -1,7 +1,7 @@
 command Wsu SudoWrite
 
 au BufNewFile,BufRead *.tex setf tex
-au BufNewFile,BufRead *.md,*.txt setl fo=1|setl wrap|setl linebreak
+au BufNewFile,BufRead *.md,*.txt setl fo=1|setl wrap|setl linebreak|Goyo
 au BufNewFile,BufRead *.pug setf pug
 au BufNewFile,BufRead *.styl setf stylus
 au BufNewFile,BufRead .vimexec setf vim

@@ -16,3 +16,4 @@ Plug 'wavded/vim-stylus', {'for': 'stylus'}
 Plug 'tmux-plugins/vim-tmux', {'for': 'tmux'}
 Plug 'Valloric/YouCompleteMe', {'do': './install.py'}
 Plug 'lervag/vimtex', {'for': 'tex'}
+Plug 'gabrielelana/vim-markdown', {'for': 'markdown'}
