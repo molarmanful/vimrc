@@ -36,6 +36,8 @@ bindkey '^H' backward-delete-char
 bindkey '^[[A' up-line-or-search
 bindkey '^[[B' down-line-or-search
 
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=241"
+
 zle -N zle-line-init
 zle -N zle-keymap-select
 zle -N zle-line-finish
@@ -45,7 +47,6 @@ eval $(thefuck --alias)
 ZSH_THEME_GIT_PROMPT_PREFIX=" @ "
 ZSH_THEME_GIT_PROMPT_SUFFIX=""
 ZSH_THEME_GIT_PROMPT_SEPARATOR=" "
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=241"
 
 export PS1=$'%{$(tput cup $(tput cols))%B%(?.%F{cyan}.%F{red})%}.>%{\e[0m%} '
 export PS2=$'   '
