@@ -41,3 +41,4 @@ set nobackup
 set noswapfile
 
 let NERDTreeShowHidden=1
+let g:markdown_enable_spell_checking = 0
