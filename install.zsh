@@ -23,4 +23,4 @@ echo "source-file ~/vimrc/r.tmux;run '~/.tmux/plugins/tpm/tpm'" > ~/.tmux.conf
 )
 
 vim +PlugInstall +qa
-npm i -g pug-cli stylus autoprefixer-stylus electron ngrok nodemon
+npm i -g pug-cli stylus autoprefixer-stylus electron ngrok nodemon live-server
