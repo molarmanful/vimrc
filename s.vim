@@ -6,6 +6,7 @@ au BufNewFile,BufRead *.md,*.txt setl fo=1
   \|setl linebreak
   \|Goyo
   \|inoremap <buffer> . .<space>
+  \|inoremap <buffer> <C-.> ...<space>
   \|inoremap <buffer> ! !<space>
   \|inoremap <buffer> ? ?<space>
   \|inoremap <buffer> : :<space>
