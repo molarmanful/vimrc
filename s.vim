@@ -1,7 +1,16 @@
 command Wsu SudoWrite
 
 au BufNewFile,BufRead *.tex setf tex
-au BufNewFile,BufRead *.md,*.txt setl fo=1|setl wrap|setl linebreak|Goyo|inoremap . .<space>|inoremap ! !<space>|inoremap ? ?<space>|inoremap : :<space>|inoremap ; ;<space>
+au BufNewFile,BufRead *.md,*.txt setl fo=1
+  \|setl wrap
+  \|setl linebreak
+  \|Goyo
+  \|inoremap <buffer> . .<space>
+  \|inoremap <buffer> ! !<space>
+  \|inoremap <buffer> ? ?<space>
+  \|inoremap <buffer> : :<space>
+  \|inoremap <buffer> ; ;<space>
+  \|setl dict+=/usr/share/dict/words
 au BufNewFile,BufRead *.pug setf pug
 au BufNewFile,BufRead *.styl setf stylus
 au BufNewFile,BufRead .vimexec setf vim
@@ -39,6 +48,7 @@ set visualbell
 set noerrorbells
 set nobackup
 set noswapfile
+set complete+=k
 
 let NERDTreeShowHidden=1
 let g:markdown_enable_spell_checking = 0
