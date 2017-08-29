@@ -5,21 +5,29 @@ au BufNewFile,BufRead *.md,*.txt setl fo=1
   \|setl wrap
   \|setl linebreak
   \|setl dict+=/usr/share/dict/words
-  \|Goyo
+
+au BufNewFile,BufRead *.md Goyo
+  \|inoremap <buffer> /. ...<space>
   \|inoremap <buffer> , ,<space>
   \|inoremap <buffer> . .<space>
-  \|inoremap <buffer> /. ...<space>
   \|inoremap <buffer> ! !<space>
   \|inoremap <buffer> ? ?<space>
   \|inoremap <buffer> : :<space>
   \|inoremap <buffer> ; ;<space>
+  \|inoremap <buffer> /.<cr> ...<cr>
   \|inoremap <buffer> ,<cr> ,<cr>
   \|inoremap <buffer> .<cr> .<cr>
-  \|inoremap <buffer> /.<cr> ...<cr>
   \|inoremap <buffer> !<cr> !<cr>
   \|inoremap <buffer> ?<cr> ?<cr>
   \|inoremap <buffer> :<cr> :<cr>
   \|inoremap <buffer> ;<cr> ;<cr>
+  \|inoremap <buffer> /.<bs> ...<bs>
+  \|inoremap <buffer> ,<bs> ,<bs>
+  \|inoremap <buffer> .<bs> .<bs>
+  \|inoremap <buffer> !<bs> !<bs>
+  \|inoremap <buffer> ?<bs> ?<bs>
+  \|inoremap <buffer> :<bs> :<bs>
+  \|inoremap <buffer> ;<bs> ;<bs>
 
 au BufNewFile,BufRead *.pug setf pug
 au BufNewFile,BufRead *.styl setf stylus
@@ -58,7 +66,8 @@ set visualbell
 set noerrorbells
 set nobackup
 set noswapfile
-set complete+=k
+set cpt+=k
+set so=999
 
 let NERDTreeShowHidden=1
 let g:markdown_enable_spell_checking = 0
