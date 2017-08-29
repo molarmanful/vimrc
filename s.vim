@@ -4,16 +4,23 @@ au BufNewFile,BufRead *.tex setf tex
 au BufNewFile,BufRead *.md,*.txt setl fo=1
   \|setl wrap
   \|setl linebreak
+  \|setl dict+=/usr/share/dict/words
   \|Goyo
   \|inoremap <buffer> , ,<space>
   \|inoremap <buffer> . .<space>
-  \|inoremap <buffer> ,. ...<space>
-  \|inoremap <buffer> ., ...<space>
+  \|inoremap <buffer> /. ...<space>
   \|inoremap <buffer> ! !<space>
   \|inoremap <buffer> ? ?<space>
   \|inoremap <buffer> : :<space>
   \|inoremap <buffer> ; ;<space>
-  \|setl dict+=/usr/share/dict/words
+  \|inoremap <buffer> ,<cr> ,<cr>
+  \|inoremap <buffer> .<cr> .<cr>
+  \|inoremap <buffer> /.<cr> ...<cr>
+  \|inoremap <buffer> !<cr> !<cr>
+  \|inoremap <buffer> ?<cr> ?<cr>
+  \|inoremap <buffer> :<cr> :<cr>
+  \|inoremap <buffer> ;<cr> ;<cr>
+
 au BufNewFile,BufRead *.pug setf pug
 au BufNewFile,BufRead *.styl setf stylus
 au BufNewFile,BufRead .vimexec setf vim
