@@ -6,7 +6,7 @@ Plug 'tpope/vim-surround'
 Plug 'noahfrederick/vim-noctu'
 Plug 'chrisbra/SudoEdit.vim'
 Plug 'bronson/vim-trailing-whitespace'
-Plug 'jiangmiao/autopairs'
+Plug 'jiangmiao/auto-pairs'
 
 Plug 'junegunn/goyo.vim', {'on': 'Goyo'}
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
