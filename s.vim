@@ -21,7 +21,7 @@ au BufNewFile,BufRead *.md Goyo
   \|inoremap <buffer> ?<cr> ?<cr>
   \|inoremap <buffer> :<cr> :<cr>
   \|inoremap <buffer> ;<cr> ;<cr>
-  \|inoremap <buffer> /.<bs> ...
+  \|inoremap <buffer> .,<bs> ...
   \|inoremap <buffer> ,<bs> ,
   \|inoremap <buffer> .<bs> .
   \|inoremap <buffer> !<bs> !
