@@ -1,29 +1,29 @@
-nnoremap <SPACE> <nop>
+nn <SPACE> <nop>
 let mapleader=' '
 
-nnoremap <Up> 5k
-nnoremap <Down> 5j
-nnoremap <Left> 5h
-nnoremap <Right> 5l
-nnoremap <S-Up> 10k
-nnoremap <S-Down> 10j
-nnoremap <S-Left> 10h
-nnoremap <S-Right> 10l
+nn <Up> 5k
+nn <Down> 5j
+nn <Left> 5h
+nn <Right> 5l
+nn <S-Up> 10k
+nn <S-Down> 10j
+nn <S-Left> 10h
+nn <S-Right> 10l
 
-nnoremap - o<esc>k
-nnoremap _ O<esc>j
-inoremap jk <esc>
-inoremap kj <esc>
+nn - o<esc>k
+nn _ O<esc>j
+ino jk <esc>
+ino kj <esc>
 
-nnoremap <leader>g :Goyo<cr>
-nnoremap <leader>n :NERDTreeToggle<cr>
-nnoremap <leader>s :setl spell! spelllang=en_us<cr>
-nnoremap <leader>l :setl nu!\|setl rnu!<cr>
-nnoremap <leader>t :term
+nn <leader>g :Goyo<cr>
+nn <leader>n :NERDTreeToggle<cr>
+nn <leader>s :setl spell! spelllang=en_us<cr>
+nn <leader>l :setl nu!\|setl rnu!<cr>
+nn <leader>t :term
 
-nnoremap  :let @/=""<cr>
-nnoremap <bs> :let @/=""<cr>
-cnoremap mk. !mkdir -p <c-r>=expand("%:h")<cr>/
+nn  :let @/=""<cr>
+nn <bs> :let @/=""<cr>
+cno mk. !mkdir -p <c-r>=expand("%:h")<cr>/
 
-vnoremap > >gv
-vnoremap < <gv
+vn > >gv
+vn < <gv

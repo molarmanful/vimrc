@@ -1,3 +1,3 @@
-vnoremap <leader>c :!pbcopy<cr>u
-nnoremap <leader>c :.!pbcopy<cr>u
-nnoremap <leader>p :r !pbpaste<cr>
+vn <leader>c :!pbcopy<cr>u
+nn <leader>c :.!pbcopy<cr>u
+nn <leader>p :r !pbpaste<cr>

@@ -1,4 +1,4 @@
-command Wsu SudoWrite
+com Wsu SudoWrite
 
 au BufNewFile,BufRead *.tex setf tex
 au BufNewFile,BufRead *.md,*.txt setl fo=1
@@ -7,27 +7,27 @@ au BufNewFile,BufRead *.md,*.txt setl fo=1
   \|setl dict+=/usr/share/dict/words
 
 au BufNewFile,BufRead *.md Goyo
-  \|inoremap <buffer> ., ...<space>
-  \|inoremap <buffer> , ,<space>
-  \|inoremap <buffer> . .<space>
-  \|inoremap <buffer> ! !<space>
-  \|inoremap <buffer> ? ?<space>
-  \|inoremap <buffer> : :<space>
-  \|inoremap <buffer> ; ;<space>
-  \|inoremap <buffer> .,<cr> ...<cr>
-  \|inoremap <buffer> ,<cr> ,<cr>
-  \|inoremap <buffer> .<cr> .<cr>
-  \|inoremap <buffer> !<cr> !<cr>
-  \|inoremap <buffer> ?<cr> ?<cr>
-  \|inoremap <buffer> :<cr> :<cr>
-  \|inoremap <buffer> ;<cr> ;<cr>
-  \|inoremap <buffer> .,<bs> ...
-  \|inoremap <buffer> ,<bs> ,
-  \|inoremap <buffer> .<bs> .
-  \|inoremap <buffer> !<bs> !
-  \|inoremap <buffer> ?<bs> ?
-  \|inoremap <buffer> :<bs> :
-  \|inoremap <buffer> ;<bs> ;
+  \|ino <buffer> ., ...<space>
+  \|ino <buffer> , ,<space>
+  \|ino <buffer> . .<space>
+  \|ino <buffer> ! !<space>
+  \|ino <buffer> ? ?<space>
+  \|ino <buffer> : :<space>
+  \|ino <buffer> ; ;<space>
+  \|ino <buffer> .,<cr> ...<cr>
+  \|ino <buffer> ,<cr> ,<cr>
+  \|ino <buffer> .<cr> .<cr>
+  \|ino <buffer> !<cr> !<cr>
+  \|ino <buffer> ?<cr> ?<cr>
+  \|ino <buffer> :<cr> :<cr>
+  \|ino <buffer> ;<cr> ;<cr>
+  \|ino <buffer> .,<bs> ...
+  \|ino <buffer> ,<bs> ,
+  \|ino <buffer> .<bs> .
+  \|ino <buffer> !<bs> !
+  \|ino <buffer> ?<bs> ?
+  \|ino <buffer> :<bs> :
+  \|ino <buffer> ;<bs> ;
 
 au BufNewFile,BufRead *.pug setf pug
 au BufNewFile,BufRead *.styl setf stylus
