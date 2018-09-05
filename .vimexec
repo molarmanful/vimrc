@@ -1,0 +1,3 @@
+au BufEnter *.vim setf vim
+au BufEnter *.zsh setf zsh
+au BufEnter *.tmux setf tmux
