@@ -7,27 +7,7 @@ au BufNewFile,BufRead *.md,*.txt setl fo=1
   \|setl dict+=/usr/share/dict/words
 
 au BufNewFile,BufRead *.md Goyo
-  \|ino <buffer> ., ...<space>
-  \|ino <buffer> , ,<space>
-  \|ino <buffer> . .<space>
-  \|ino <buffer> ! !<space>
-  \|ino <buffer> ? ?<space>
-  \|ino <buffer> : :<space>
-  \|ino <buffer> ; ;<space>
-  \|ino <buffer> .,<cr> ...<cr>
-  \|ino <buffer> ,<cr> ,<cr>
-  \|ino <buffer> .<cr> .<cr>
-  \|ino <buffer> !<cr> !<cr>
-  \|ino <buffer> ?<cr> ?<cr>
-  \|ino <buffer> :<cr> :<cr>
-  \|ino <buffer> ;<cr> ;<cr>
-  \|ino <buffer> .,<bs> ...
-  \|ino <buffer> ,<bs> ,
-  \|ino <buffer> .<bs> .
-  \|ino <buffer> !<bs> !
-  \|ino <buffer> ?<bs> ?
-  \|ino <buffer> :<bs> :
-  \|ino <buffer> ;<bs> ;
+  \|ino <buffer> ., ...
 
 au BufNewFile,BufRead *.pug setf pug
 au BufNewFile,BufRead *.styl setf stylus
