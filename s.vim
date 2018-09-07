@@ -44,6 +44,18 @@ set nobackup
 set noswapfile
 set cpt+=k
 set so=999
+set noshowmode
+
+let g:lightline={
+\ 'colorscheme':'gruvbox',
+\ 'active':{
+\   'left':[['mode','paste'],['readonly','filename','modified']],
+\   'right':[['lineinfo'],['percent'],['fileformat','fileencoding','filetype','hexvalue']]
+\ },
+\ 'component':{
+\   'hexvalue':'0x%B'
+\ }
+\}
 
 let NERDTreeShowHidden=1
 let g:markdown_enable_spell_checking = 0
