@@ -1,5 +1,3 @@
-source-file ~/vimrc/d.tmux
-
 set -g @plugin 'tmux-plugins/tmux-sensible'
 set -g @plugin 'tmux-plugins/tmux-pain-control'
 set -g @plugin 'tmux-plugins/tmux-sessionist'
