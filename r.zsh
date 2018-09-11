@@ -47,7 +47,7 @@ ZSH_THEME_GIT_PROMPT_PREFIX=" @ "
 ZSH_THEME_GIT_PROMPT_SUFFIX=""
 ZSH_THEME_GIT_PROMPT_SEPARATOR=" "
 
-export PS1=$'%{$(tput cup $(tput cols))%B%(?.%F{cyan}.%F{red})%}.>%{\e[0m%} '
+export PS1=$'%{$(tput cup $(tput cols))%B%(?.%F{cyan}.%F{red})%}›>%{\e[0m%} '
 export PS2=$'   '
 
 clear

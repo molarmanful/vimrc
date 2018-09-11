@@ -12,9 +12,10 @@ au BufNewFile,BufRead *.md Goyo
 au BufNewFile,BufRead *.pug setf pug
 au BufNewFile,BufRead *.styl setf stylus
 au BufNewFile,BufRead .vimexec setf vim
-au BufWritePost *.pegjs silent !pegjs -o %:r-peg.js % >/dev/null &
-au BufWritePost *.pug silent !pug % >/dev/null &
-au BufWritePost *.styl silent !stylus -u autoprefixer-stylus -c % >/dev/null &
+au BufWritePost *.pegjs !pegjs -o %:r-peg.js %
+au BufWritePost *.pug !pug %
+au BufWritePost *.styl !stylus -u autoprefixer-stylus -c %
+au BufWritePost *.hs !ghc -o %:r %
 
 set shell=/bin/zsh
 set showcmd

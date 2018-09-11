@@ -9,6 +9,8 @@ Plug 'bronson/vim-trailing-whitespace'
 Plug 'jiangmiao/auto-pairs'
 Plug 'itchyny/lightline.vim'
 Plug 'shinchu/lightline-gruvbox.vim'
+Plug 'wgurecky/vimSum'
+Plug 'neovimhaskell/haskell-vim'
 
 Plug 'junegunn/goyo.vim', {'on': 'Goyo'}
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
