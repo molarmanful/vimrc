@@ -58,6 +58,7 @@ let g:lightline={
 \ }
 \}
 
+let g:indentLine_char='│'
 let NERDTreeShowHidden=1
 let g:markdown_enable_spell_checking = 0
 

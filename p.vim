@@ -11,6 +11,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'wgurecky/vimSum'
 Plug 'neovimhaskell/haskell-vim'
+Plug 'Yggdroot/indentLine'
 
 Plug 'junegunn/goyo.vim', {'on': 'Goyo'}
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
