@@ -15,7 +15,6 @@ au BufNewFile,BufRead .vimexec setf vim
 au BufWritePost *.pegjs !pegjs -o %:r-peg.js %
 au BufWritePost *.pug !pug %
 au BufWritePost *.styl !stylus -u autoprefixer-stylus -c %
-au BufWritePost *.hs !ghc -o %:r %
 
 set shell=/bin/zsh
 set showcmd
@@ -61,6 +60,10 @@ let g:lightline={
 let g:indentLine_char='│'
 let NERDTreeShowHidden=1
 let g:markdown_enable_spell_checking = 0
+let g:ycm_global_ycm_extra_conf = '~/.config/nvim/plugged/YouCompleteMe/.ycm_extra_conf.py'
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
 
 let g:AutoPairsFlyMode=1
 
