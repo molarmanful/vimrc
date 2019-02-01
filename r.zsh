@@ -14,7 +14,7 @@ source ~/zsh-git-prompt/zshrc.sh
 alias v='nvim'
 alias vim='nvim'
 
-autoload -Uz compinit zcalc
+autoload -Uz compinit zcalc zmv
 if [[ -n ~/.zcompdump(#qN.mh+24) ]]; then
   compinit
 else
