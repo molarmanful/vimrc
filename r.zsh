@@ -6,6 +6,7 @@ unsetopt BG_NICE
 
 export KEYTIMEOUT=10
 export EDITOR=nvim
+export PATH=$HOME/bin:$HOME/.local/bin:$PATH
 plugins=(common-aliases git fast-syntax-highlighting zsh-autosuggestions z history colored-man-pages archlinux extract)
 export ZSH=$HOME/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
