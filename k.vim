@@ -10,6 +10,9 @@ nn <S-Down> 10j
 nn <S-Left> 10h
 nn <S-Right> 10l
 
+nm <leader>t <C-y>,
+vm <leader>t <C-y>,
+
 nn - o<esc>k
 nn _ O<esc>j
 ino jk <esc>
@@ -31,7 +34,7 @@ nn <leader>rP :exe 'sp\|te python' expand("%")<cr>
 
 nn  :let @/=""<cr>
 nn <bs> :let @/=""<cr>
-cno mk. !mkdir -p <c-r>=expand("%:h")<cr>/
+cno mk. !mkdir -p <C-r>=expand("%:h")<cr>/
 
 vn > >gv
 vn < <gv

@@ -14,6 +14,7 @@ source ~/zsh-git-prompt/zshrc.sh
 
 alias v='nvim'
 alias vim='nvim'
+alias j-note='jupyter-notebook --no-browser'
 
 autoload -Uz compinit zcalc zmv
 if [[ -n ~/.zcompdump(#qN.mh+24) ]]; then
