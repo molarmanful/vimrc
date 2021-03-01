@@ -13,12 +13,17 @@ Plug 'wgurecky/vimSum'
 Plug 'Yggdroot/indentLine'
 Plug 'vim-syntastic/syntastic'
 Plug 'mattn/emmet-vim'
+Plug 'fidian/hexmode'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/goyo.vim', {'on': 'Goyo'}
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'pangloss/vim-javascript', {'for': 'javascript'}
+Plug 'mxw/vim-jsx', {'for': 'javascript'}
+Plug 'elzr/vim-json', {'for': 'json'}
 Plug 'alunny/pegjs-vim', {'for': 'pegjs'}
+Plug 'othree/html5.vim'
+Plug 'posva/vim-vue', {'for': 'vue'}
 Plug 'digitaltoad/vim-pug', {'for': 'pug'}
 Plug 'wavded/vim-stylus', {'for': 'stylus'}
 Plug 'tmux-plugins/vim-tmux', {'for': 'tmux'}
