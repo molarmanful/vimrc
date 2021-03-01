@@ -14,6 +14,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'vim-syntastic/syntastic'
 Plug 'mattn/emmet-vim'
 
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/goyo.vim', {'on': 'Goyo'}
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'pangloss/vim-javascript', {'for': 'javascript'}
@@ -24,7 +25,7 @@ Plug 'tmux-plugins/vim-tmux', {'for': 'tmux'}
 Plug 'elixir-editors/vim-elixir', {'for':'elixir'}
 Plug 'neovimhaskell/haskell-vim', {'for':'haskell'}
 Plug 'jdonaldson/vaxe', {'for':['haxe','hxml']}
-Plug 'Valloric/YouCompleteMe', {'do': './install.py'}
 Plug 'lervag/vimtex', {'for': 'tex'}
+Plug 'sophacles/vim-processing', {'for': 'processing'}
 Plug 'gabrielelana/vim-markdown', {'for': 'markdown'}
 call plug#end()

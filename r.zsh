@@ -24,10 +24,21 @@ _comp_options+=(globdots)
 
 bindkey -e
 precmd() { RPROMPT="" }
-function zle-line-init zle-keymap-select {
-  RPS1=$'${${KEYMAP/vicmd/NORMAL}/(main|viins)/} %{$fg_bold[yellow]%}%~%{$reset_color%}$(git_super_status)'
-        zle reset-prompt
+
+function virtualenv_info(){
+  if [[ -n "$VIRTUAL_ENV" ]]; then
+    venv="${VIRTUAL_ENV##*/}"
+  else
+    venv=''
+  fi
+  [[ -n "$venv" ]] && echo "(V:%{$fg_bold[yellow]%}$venv%{$reset_color%})"
 }
+
+function zle-line-init zle-keymap-select {
+  RPS1=$'${${KEYMAP/vicmd/NORMAL}/(main|viins)/} %{$fg_bold[yellow]%}%~%{$reset_color%}$(virtualenv_info)$(git_super_status)'
+  zle reset-prompt
+}
+
 bindkey "jk" vi-cmd-mode
 bindkey "kj" vi-cmd-mode
 bindkey '^?' backward-delete-char
@@ -47,8 +58,11 @@ ZSH_THEME_GIT_PROMPT_PREFIX=" @ "
 ZSH_THEME_GIT_PROMPT_SUFFIX=""
 ZSH_THEME_GIT_PROMPT_SEPARATOR=" "
 
-export PS1=$'%{$(tput cup $(tput cols))%B%(?.%F{cyan}.%F{red})%}›>%{\e[0m%} '
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+export PS1=$'%{$(tput cup $(tput cols))%B%(?.%F{cyan}.%F{red})%}›>%{$reset_color%} '
 export PS2=$'   '
+
+eval "$(direnv hook zsh)"
 
 clear
 tput cvvis

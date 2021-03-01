@@ -6,9 +6,6 @@ au BufNewFile,BufRead *.md,*.txt setl fo=1
   \|setl linebreak
   \|setl dict+=/usr/share/dict/words
 
-au BufNewFile,BufRead *.md Goyo
-  \|ino <buffer> ., ...
-
 au BufNewFile,BufRead *.pug setf pug
 au BufNewFile,BufRead *.styl setf stylus
 au BufNewFile,BufRead .vimexec setf vim
@@ -64,6 +61,7 @@ let g:ycm_global_ycm_extra_conf = '~/.config/nvim/plugged/YouCompleteMe/.ycm_ext
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
+let g:syntastic_python_python_exec = 'python3'
 
 let g:AutoPairsFlyMode=1
 

@@ -1,6 +1,7 @@
 source ~/vimrc/p.vim
 source ~/vimrc/k.vim
 source ~/vimrc/s.vim
+source ~/vimrc/c.vim
 if $TERM!='rxvt-unicode-256color'
   set tgc
 endif

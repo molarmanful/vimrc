@@ -1,8 +1,8 @@
 alias tmux='tmux -2'
 alias ls='ls -Ga'
 
-gca(){
-  git clone "https://github.com/$1"
+gcla(){
+  gh repo clone "$1"
 }
 gpa(){
   git add .
